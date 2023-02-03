@@ -28,6 +28,25 @@
 
 
 
+  
+    
+  .dropmenu {
+    float: left;
+    padding: 5px;
+    position: fixed;
+    bottom: 0%;
+    right: 5%;
+    max-width: 60%;
+    font-size: 1.5vw;
+    z-index: 100;
+  }
+    
+  #dropmenu:hover {
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+  }
+
+
+
     .vimeo-wrapper {
       position: fixed;
       top: 0;

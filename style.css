@@ -1,6 +1,6 @@
 
   body {
-    /*background-image: url("./assets/vrn_dsktp.png");*/
+    background-image: url("./assets/vrn_dsktp.png");
     /*background-color: white;*/
     background-size: contain;
     background-position: center center;
@@ -24,6 +24,25 @@
     padding-left: 5%;
     text-align: left;
     contain: fit-content;
+    }
+
+
+
+
+    
+    .dropmenu {
+      float: left;
+      padding: 5px;
+      position: fixed;
+      bottom: 0%;
+      right: 5%;
+      max-width: 60%;
+      font-size: 1.5vw;
+      z-index: 100;
+    }
+      
+    #dropmenu:hover {
+      filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
     }
 
 
