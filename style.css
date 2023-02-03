@@ -10,7 +10,7 @@
     height: 100%;
     font-family: 'Dia', helvetica, arial, sans-serif;
     font-style: normal;
-    font-size: 12vw;  
+    font-size: 9vw;  
     color: white;
     overflow: hidden;    
     }
@@ -19,9 +19,10 @@
     color: whitesmoke;
     display: inline-block;
     position: fixed;
-    top: -25%;
-    right: 0%;
-    text-align: right;
+    top: 0%;
+    left: 0%;
+    padding-left: 5%;
+    text-align: left;
     contain: fit-content;
     }
 
