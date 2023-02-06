@@ -8,78 +8,465 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="og:title" property="og:title" content="virreina" />
 <meta name="og:description" property="og:description" content="artes de la campo al compu" />
-<meta property="og:image" content="./assets/[VRN]Logos-23.png" />
-<link rel="shortcut icon" href="./assets/[VRN]Logos-23.png">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+<meta property="og:image" content="../../assets/[VRN]Logo/[VRN]Logos-27.png" />
+<link rel="shortcut icon" href="../../assets/[VRN]Logo/[VRN]Logos-27.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Manrope:wght@500;600&family=Noto+Sans+Mono:wght@400;800&family=Playfair+Display:wght@500;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#T0" ).draggable();
+    $( "#T1" ).draggable();
+    $( "#N1" ).draggable();
+    $( "#LF1" ).draggable();
+    $( "#LF2" ).draggable();
+    $( "#LF3" ).draggable();
+    $( "#SR1" ).draggable();
+    $( "#SR2" ).draggable();
+    $( "#SR3" ).draggable();
+    $( "#UU1" ).draggable();
+    $( "#UU2" ).draggable();
+    $( "#UU3" ).draggable();
+    $( "#A1" ).draggable();
+    $( "#A2" ).draggable();
+    $( "#A3" ).draggable();
+  } );
+  </script>
 
-<script>
-  document.querySelector('#container').setAttribute("onclick", "location.href='home/index.html'");
+</head>
 
-  if (screen.width <= 500) {
-  document.location = 'movil/index.html';
-  }
-</script>
+<header>
+    <script>
+        function clock() {
+      var time = new Date(),
+          hours = time.getHours(),
+          minutes = time.getMinutes(),
+          seconds = time.getSeconds();
+      document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+        function harold(standIn) {
+          if (standIn < 10) {
+            standIn = '0' + standIn
+          }
+          return standIn;
+        }
+      }
+      setInterval(clock, 1000);
+    
+    
+      </script>
+
+    <div class="clock">
+        <a href="./home/index.html" target=""></a>
 
 
+        <div class="chill_area">
+            <a href="" target="">
+              <img src="../../assets/[VRN]Logo/[VRN]Logos-10.svg"
+              alt="VRN" height="120px" width="" ;="">
+            </a>
+          </div>
 
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 7, 2023 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-// Get today's date and time
-var now = new Date().getTime();
-
-// Find the distance between now and the count down date
-var distance = countDownDate - now;
-
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-// Output the result in an element with id="demo"
-document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s ";
-
-// If the count down is over, write some text 
-if (distance < 0) {
-clearInterval(x);
-document.getElementById("demo").innerHTML = "Now performing";
-}
-}, 1000);
-</script>
+    
+</header>
 
 
 <body>
-  <p id="demo"></p>
+
+
+<!--
+<div class="dropmenu">
+    <a href="./proyectos/11_MiguelCintaRobles_/index.html" target="">
+      <img src="../../assets/[VRN]Logo/[VRN]Logos-01.svg"
+      alt="VRN" height="" width="60px" ;="">
+    </a>
+  </div>
+-->
+
+  <div class="dropdown">
+    <button class="dropbtn"><img src="../../assets/[VRN]Logo/[VRN]Logos-01.svg"
+        alt="VRN" height="" width="60px" ;=""></button>
+    <div class="dropdown-content">
+      <a href="https://virreina.space/" target="">VRN</a>
+      <a href="../../about/index.html">About</a>
+      
+    </div>
+  </div>
+
+
+
+
+  <div class="banner">
+    <a class="readinglink" href="https://www.instagram.com/miguelcintarobles/" target="_blank">
+      <img class="icon" src="./assets/banner_miguel.png"
+        alt="banner" height="" width="140px" ;="">
+    </a>
+    <img class="readingimg hover" src="./assets/ID_Miguel.png"
+        alt="ID" height="" width="" ;=""> 
+  </div>
+
 
   <!--
+  <div class="home">
+    <a href="./home/index.html" target="">
+      <h3>[X]</h3>    
+    </a>
+</div>
+
+
+<div class="clock">
+    <a href="./home/index.html" target=""></a>
+
+  -->
+
+    <!--
+    <script>
+        var currentDate = new Date()
+        var day = currentDate.getDate()
+        var month = currentDate.getMonth() + 1
+        var year = currentDate.getFullYear()
+        document.write("<b>" + day + "/" + month + "/" + year + "</b>")
+    </script>
+
+        <h1>38.4161° S,69.6167° W</h1>
+    -->
+</div>
+
+
+
+
+<div id="T0" class="ui-widget-content"> 
+   <p>
+    <h3>
+        Antes de empezar:
+        <br><br>
+        *Al escribir este texto la teoría de género fue un cuestionamiento 
+        constante que tuve alrededor de la manera en que nombramos 
+        lingüísticamente al ecosistema y sus territorios. 
+        En muchas ocasiones intenté eliminar la necesidad de utilizar
+         artículos (el, la los, etc) para no asumir o referirme a árboles, musgos, 
+        ríos, flores, cuevas y piedras. Sin embargo, para ciertas oraciones y 
+        su entendimiento parecía necesario.  Por lo tanto, decidí  
+        intercambiar el uso de la e o la x, formas igual de eficaces para 
+        combatir la  “O”  por un guión bajo “_”. De esta 
+        manera, al dejar un renglón vacío, se genera algo así como 
+        un espacio de siembra en el texto, donde un lector puede depositar 
+        una semilla y cultivar aquello que desee.  
+    </h3>
+    <h4> A Estef y David. En especial a Trufa y l_s musgos <br>por acompañar las caminatas </h4>
+    </p>
+<div>
+
+<div id="I1" class="ui-widget-content">
+<img src="./assets/virreina-1.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I2" class="ui-widget-content">
+<img src="./assets/virreina-2.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I3" class="ui-widget-content">
+<img src="./assets/virreina-3.JPG"
+alt="" height="" width="600px"  title="";="">
+</div>
+
+<div id="I4" class="ui-widget-content">
+<img src="./assets/virreina-4.JPG"
+alt="" height="" width="400px"  title="";="">
+</div>
+
+<div id="I5" class="ui-widget-content">
+<img src="./assets/virreina-5.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I6" class="ui-widget-content">
+<img src="./assets/virreina-6.JPG"
+alt="" height="" width="1200px"  title="";="">
+</div>
+
+<div id="I7" class="ui-widget-content">
+<img src="./assets/virreina-7.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I8" class="ui-widget-content">
+<img src="./assets/virreina-8.JPG"
+alt="" height="" width="1200px"  title="";="">
+</div>
+
+<div id="I9" class="ui-widget-content">
+    <img src="./assets/virreina-9.JPG"
+        alt="" height="" width="800px"  title="";="">
+    </div>
+
+
+    <div id="I10" class="ui-widget-content">
+        <img src="./assets/virreina-10.JPG"
+            alt="" height="" width="800px"  title="";="">
+        </div>
+
+        <div id="I11" class="ui-widget-content">
+            <img src="./assets/virreina-11.JPG"
+                alt="" height="" width="1600px"  title="";="">
+            </div>
+
+<div id="I12" class="ui-widget-content">
+<img src="./assets/virreina-12.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I13" class="ui-widget-content">
+<img src="./assets/virreina-13.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I14" class="ui-widget-content">
+<img src="./assets/virreina-14.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I15" class="ui-widget-content">
+<img src="./assets/virreina-16.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+<div id="I17" class="ui-widget-content">
+<img src="./assets/virreina-17.JPG"
+alt="" height="" width="800px"  title="";="">
+</div>
+
+
+
+    <div id="T1" class="ui-widget-content"> 
+        <p>
+         <h2>
+            ¿Cómo recordamos un bosque? De qué manera se registra la multitud de circunstancias que suceden en un territorio, ¿enumeramos l_s árboles, l_s insectos, l_s flores? ¿Medimos _ clima, _ pH de la tierra, olor, longitud de l_s ríos, l_ luz, l_s sistemas de raíces subterráneas, l_ cantidad de lluvia que cae en un año? ¿Qué Scontamos? ¿Qué categorías o lenguajes determinan la memoria con la cual  narramos y construimos las historias de un ecosistema? ¿Que dejamos fuera? ¿Qué decidimos olvidar? 
+            <br><br>
+            Un bosque/territorio no se construye sólo por aquello que es visible, o por l_s recursos explotables que habitan su zona en hectáreas, litros o toneladas. Si no también por las historias que atraviesan sus ramas y hojas, por las conversaciones invisibles al lenguaje humanx, que se desarrollan en l_s microclimas de lo pequeño, en lo que está a nivel de suelo, muy pegado a la tierra. Ahí habita el musgo, sobre la superficie de múltiples objetos, en un espacio o zona límite que no llega a medir o crecer más allá de los 8 centímetros. 
+            <br><br>
+            Durante el mes de diciembre y mediados de enero viví en un pequeño poblado al sur de Suiza llamado Vionnaz, en ese lapso realicé cerca de 40 caminatas en l_s bosques rodeaban el pueblo. Esta textos e imágenes son el resultado de las observaciones y encuentros que sucedieron al intentar aprender a hablar con l_s plantas, en especial con l_s musgos. 
+         </h2>
+        </p>
+     <div>
+
+
+        <div id="N1" class="ui-widget-content"> 
+            <p>
+                <h1>*1_</h1>
+             <h4>
+                Vionnaz- Sur de suiza  46°19′N 6°54′E
+            
+<br>
+*/ lunes 12 de diciembre/ 2022
+Caminata aprox 6km 
+326 msnm
+</h4>   
+<h2>
+Los charcos congelados y las formas que generan.
+Formas que se producen cuando la tierra, se amolda 
+después del golpeteo de las gotas de la lluvia.
+<br><br>
+Lluvia, Líquidos, Agua como catalizador para suavizar la tierra,
+ para amoldar. 
+<br>
+¿Para acelerar o desacelerar?
+<br><br>
+Sobre como se pueden modelar formas en el bosque*
+</h2>
+<h3 style=
+"color: lightslategrey;
+padding: 5%;
+text-align: center;"
+>
+“Un catalizador es una sustancia, simple o compuesta, que aumenta o reduce la velocidad de una reacción química, este proceso se llama catálisis”
+</h3>
+<h2>
+Formados los charcos, baja la temperatura y se congelan los líquidos y nacen figuras. Moldes de hielo hechos de lodo.
+<br><br>
+Los procesos de congelar, de encapsular hojas o materia. Estructuras para detener el tiempo de lo que está adentro (casi estático), y lo que está afuera (en movimiento, veloz)
+<br><br>
+Esta diferencia entre velocidad sucede mucho en la observación y desarrollo de la escultura suave, la velocidad en este caso es una circunstancia climática, un detalle atmosférico donde a mayor calor, mayor movimiento de partículas en la materia, mayor descomposición, a menor temperatura una mejor preservación.
+<br><br>
+Es en velocidades menores,  donde la escultura suave puede funcionar mejor para una observación, pues se encuentra en una especia de reposo, de casi no movimiento interno, sin catalizadores, sin cambios.**
+<br><br>
+Otro factor que aumenta o reduce la velocidad y movimiento de un objeto dentro de la escultura suave es la humedad, atmosférica o inducida. 
+</h2>
+</p>
+<div>
+    
+
+<div id="FN1" class="ui-widget-content"> 
+<p>
+<h5>
+*
+<br>
+Cuando me refiero a bosque o a selva, me refiero a la configuración de árboles
+Circunstancias climáticas, altitud, especies y multitud de circunstancias no humanas que opera en una geografía específica. Bosque puede ser intercambiable por selva y viceversa.
+</h5>
+</p>
+<div>
+
+
+
+<div id="FN2" class="ui-widget-content"> 
+<p>
+<h5>
+**
+<br>
+Las velocidades dentro de los procesos de escultura suave se pueden vincular con la sucesión dentro de la agricultura sincrónica. Sobre cómo trabajan los microorganismos sobre los tejidos de múltiples objetos en el ecosistema.  
+</h5>
+</p>
+<div>
+
+
+
+
+<div id="N2" class="ui-widget-content"> 
+    <p>
+    <h1>*1.5_</h1>
+    <h2>
+    <i>
+    ¿Dónde hay aristas, estructuras puntiagudas o líneas rectas en un bosque?  
+    ¿Predominan las curvas en las formas orgánicas?
+    </i>
+    Qué diferencia encuentras entre un bosque y una selva.
+    ¿Su condición climática, sus especies, su flora, su fauna, su cosecha solar, su altura? 
+    <br><br>    
+    La diferencia más obvia pudiera ser la complejidad superficial/visual*** En la selva se enredan y ocultan múltiples microorganismos que impide que nuestra vista pueda recorrer más de 10 metros a la redonda. Al caminar la vista frontal se encuentra con heliconias, orquídeas, bromelias, caobas, ceibas, palmas y para avanzar hay cierta cautela, al cuerpo lo atraviesan diversas formas y toqueteos de ramas, espinas, y varios piquetes al caminar.
+    <br><br>
+    Un bosque pareciera ser menos complejo, árboles altos, zonas espaciados, huecos de luz, su complejidad, complejidad superficial indica no estar tan abultada. Sin embargo, pienso mucho en como el privilegio de la vista beneficia la idea de complejidad ecosistémica “a aquello verde” que se puede reconocer inmediatamente. Dentro de un bosque, en los suelos existen redes minúsculas, los musgos son esas redes minúsculas de bosques dentro de bosques, igual de complejas que las versiones macros de la selva.
+    <br><br>
+    Es en los bosques, tal vez, es donde se sitúan la mayor cantidad de senderos. La posibilidad de hacer/nacer/mantener un sendero reside en la continuidad de quienes lo recorren.
+    <br><br>
+    <i>La definición clara de un camino, al desplazarnos dentro de un bosque, se comienzan a develar en el movimiento entre veredas, un desarrollo arquitectónico en el bosque propuesto por el paso constante de caminantes humanos y no humanxs.</i> 
+    </h2>
+    </p>
+<div>
+
+    
+<div id="FN3" class="ui-widget-content"> 
+    <p>
+    <h5>
+    ***
+    <br>
+    Por complejidad superficial/visual me refiero a la cantidad de materia orgánica y variación de especies que podemos diferenciar o notar en un plano. 
+    </h5>
+    </p>
+<div>
+
+
+<div id="N3" class="ui-widget-content"> 
+<p>
+<h1>*2_</h1>
+<h4>
+Mar-13 de diciembre
+</h4>  
+<h2>
+Ecosistemas frios? -5 - 5c
+Tener una diferencia distancia de 10 grados entre cada zona de observación.
+<br><br>
+La manera en que los musgos pueden existir en variaciones de temperatura. Lugares Extremadamente, áridos y entrar en una etapa de reposo y en circunstancias climáticas bajo 0. 
+<br><br>
+.
+<br><br>
+Oaxaca esta a 1550 msnm
+Vionnaz a 320 msnm
+<br><br>
+El punto mas alto en suiza es el El pico Dufour, situado a 4.636 m
+En México el  Pico de Orizaba o Citlaltépetl 5,610 m
+<br><br>
+Después de caminata.
+<br><br>
+Memorias ecosistémicas. 
+<br><br>
+Vi venados cruzar la carretera, la circunferencia de l_ nieve que está alrededor  de l_s ríos. Ese momento de congelación. Que va definiéndose de afuera hacia adentro. río que corre hasta que entra a un punto de congelación y desde arriba pareciera que entro en pausa, debajo, aún continua una corriente? 
+<br><br><br><br><br>
+El sonido, cómo hacer inmersiva una escultura suave.
+Dos sonidos muy específicos.
+La lluvia sobre las hojas en el suelo, que no es lluvia, sino pequeños fragmentos de nieve, producen un sonido que es como <i>white noise.</i>
+<br><br>
+Sonido 2: lanzar una piedra al lago y escuchar una especie de eco agudo. Un rebote 
+<br><br>
+Recordar y observar a Andy Goldsworthy 
+La suavidad de la nieve, que significa para alguien del sur, del casi el trópico estos ecosistemas. 
+<br><br>
+Lugares por investigar y zonas para hacer lecturas <br><br>
+<iframe width="560" height="315" src="http://ifiaar.org/RESOURCES.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<a href="ttp://ifiaar.org/RESOURCES.html">INSTITUTE FOR INTERSPECIES ART AND RELATIONS</a>
+
+        </h2>
+        </p>
+        <div>
+
+
+<div id="NNN3" class="ui-widget-content"> 
+<p>
+<h2>
+Apuntes de lectura:
+<iframe width="560" height="315" src="https://thecreativeindependent.com/people/composer-and-pianist-masakatsu-takagi-on-communicating-with-nature-through-your-art/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+El regreso a la agricultura desde una posición de desconocimiento 
+<br><br>
+<i>“I kinda stopped making visual things because I thought it looked—not only my work, but many works in [the] art world—not connected to reality.”</i>
+</h2>
+</p>
+<div>
+                
+                
+    <div id="N4" class="ui-widget-content"> 
+        <p>
+        <h1>*3_</h1>
+        <h4>
+            Viernes 16 de diciembre 2022
+        </h4>  
+        <h2>
+        <br><br>
+        Explotaron un par de vainas de semillas que parecen ser como leguminosas, en la noche sucedió este movimiento. Oxígeno contenido, atrapado, esperando un punto para explotar. 
+        <br><br>
+Recogí unas semillas que parecen rambutanes, que son como esferas puntiagudas. Son castañas y de sus semillas se pueden hacer cremas.
+<br><br>
+La observación alrededor de como de un tronco muerto nacen hongos y musgo. Un receptor perfecto para el desarrollo, para la descomposición.
+<br><br>
+Alimento escultórico, energía. 
+<br><br>
+Dos microorganismos que viven en una sola cosa, observaciones alrededor del hecho de cómo pensamos la idea de parásitos u hongos  l_s árboles. Multi casas. Multi hogares 
+<br><br>
+Apuntar alrededor de la idea de adjuntar y quitar, por ejemplo en l_s compostas hay un proceso de descomposición, de ir añadiendo materia. L_s lianas y l_s enredaderas son un proceso de adjuntar de agregar 
+ambos están mediados por sistemas de velocidad
+<br><br>
+Apuntar alrededor del hecho de que existen formas de clasificar en género y especie en la taxonomía científica. Dentro de la escultura suave pueden existir nuevas clasificaciones a partir de cómo se modifica la  forma y la materia a través del tiempo, ya sea agregando o quitando
+<br><br>
+Colecte un_s piedras al lado del río. Había una especie de playa pequeña. El aroma me recuerda a Coatzacoalcos o era a la barra de Alvarado?. Una especie de olor a sucio, a pescado. Dudo que el río sea salado, evidentemente es dulce, pero algo siempre tiene l_ arena cercana a cuerpos de agua en diferentes geografías que hace que nos recuerde un poco al mar
+<br><br>
+Apunte extra sobre las enredaderas que rodean los árboles. Suben desde abajo y abrazan toda la superficie de este, no estoy seguro si es una especie epífita o invasora. Estef me dijo que su suegra le dijo que no hacen nada, que simplemente cobijan en los árboles. 
+<br><br>
+Pienso en los acolchados, en l_s hojas que cubren l_ superficie de l_ tierra. Estas hojas que retienen la humedad que se acumulan por capas. En el caso de l_s musgos, presentan un fondo para resaltar el contorno sobre la cual habitan l_s musgos.
+<br><br>
+Presentan una oportunidad de composición.la idea de fondo y forma partiendo del concepto de plano?
+</h2>
+                </p>
+                <div>
+
+<!--
+
 <div class="fullscreen">
-  <div class="video">
-      <div class="vimeo-wrapper">
-      <iframe src="https://player.vimeo.com/video/707819851?h=2eec79b159&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&playsinline=1&muted=1" width="480" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-  </div>
+    <div class="video">
+        <div class="vimeo-wrapper">
+        <iframe src="https://player.vimeo.com/video/707819851?h=2eec79b159&autoplay=0&loop=1&title=0&byline=0&portrait=0&controls=0&playsinline=1&muted=0" width="480" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 -->
-<div class="dropmenu">
-  <a href="" target="">
-    <img src="./assets/[VRN]Logos-19.svg"
-    alt="VRN" height="" width="200px" ;="">
-  </a>
-</div>
 
 </body>
-
 
 
 
