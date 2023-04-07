@@ -1,126 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-
-	
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="💿">
-    <title>PabloBaresch</title>
-    <link rel="shortcut icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Femojigraph.org%2Fmedia%2Fwhatsapp%2Foptical-disk_1f4bf.png&f=1&nofb=1">
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>                                                                                                 
-    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
-    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-enviropacks@latest/aframe-enviropacks.js"></script>
-
-
+<title> 🟄 virreina 🟄 </title>
+<meta name="description" content="artes de la campo al compu">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="og:title" property="og:title" content="virreina" />
+<meta name="og:description" property="og:description" content="artes de la campo al compu" />
+<meta property="og:image" content="https://d2w9rnfcy7mm78.cloudfront.net/20258157/original_cb2d2cb2a0fa98eeceb439265532836d.png?1675757381?bc=0" />
+<link rel="shortcut icon" href="https://d2w9rnfcy7mm78.cloudfront.net/20258157/original_cb2d2cb2a0fa98eeceb439265532836d.png?1675757381?bc=0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Manrope:wght@500;600&family=Noto+Sans+Mono:wght@400;800&family=Playfair+Display:wght@500;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </script>
 </head>
+
+
+<header>
+
+  <!--  menu  -->
+  <div class="dropdown">
+    <button class="dropbtn">
+        <a href="https://virreina.space/" target="">
+            <img src="../assets/[VRN]Logo/[VRN]Logos-01.svg" alt="VRN" height="" width="60px" ;="">
+        </a>
+    </button>
+    <div class="dropdown-content">
+      <a href="../residencia/index.html">Residencies</a>
+      <a href="../parcela/index.html">Parcela</a>
+      <a href="../soloshow/index.html">SoloShow</a>
+      <a href="../screenings/index.html">Screenings</a>
+      <a href="../about/index.html">About</a>
+    </div>
+  </div>    
+
+
+      <!--  reloj  -->
+      <div class="clock">
+    <script>
+        function clock() {
+      var time = new Date(),
+          hours = time.getHours(),
+          minutes = time.getMinutes(),
+          seconds = time.getSeconds();
+      document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+        function harold(standIn) {
+          if (standIn < 10) {
+            standIn = '0' + standIn
+          }
+          return standIn;
+        }
+      }
+      setInterval(clock, 1000);
+    </script>
+      </div>
+  
+</header>
+
+
+
 
 <body>
 
-    
-    <a-assets>
-        <img id="ground" src="./assets/ground.jpg">
-        <img id="png1" src="./assets/png1.png">
-    </a-assets>     
+<!--  seccion  -->
+<div class="seccion">
+	<a href="" target="">
+	  <p>Parcela</p>
+	</a>
+  </div>
 
-    <!--
-        <a-asset-item id="bodegaje" src="./assets/bodegaje.glb"></a-asset-item>
-    -->
-    
-  <a-scene physics="gravity: 0  ; " vr-mode-ui="enabled: false; ">
-  
-    <a-entity id="rig" movement-controls kinematic-body position="2.192 1.6 2">
-        <a-entity id="camera" camera position="-2 2 6" camera rotation ="0 0 0"  look-controls  cursor="rayOrigin: mouse"></a-entity>
-      </a-entity>
-
-   
-  
-    <!-- CIELO -->
-<!--
-    <a-entity environment="preset: default; skyType: atmosphere; sunPosition: 1 7 -2; groundTexture: walkernoise; groundColor: #228B22; groundColor2: #9ACD32; grid: none;ground:none"></a-entity>
-    <a-entity geometry="primitive: plane; width: 1000; height: 1000" rotation="-90 0 0" material="shader: flat; src: url(./assets/tapete.jpg); repeat: 100 100"></a-entity>
-    
-    <a-plane static-body width="30" height="30" rotation="-90 0 0" position="0 6 0"
-    material="opacity: 0; transparent: true"></a-plane>
--->
-  
-<a-scene 
-    background="color: #ECECEC" 
-    renderer="colorManagement: true; physicallyCorrectLights: true" 
-    enviropack-material="shader: auto">
-    
-    
-    
- 
-<!--
-
-    <a-assets>
-    <img id="ground" src="./assets/ground.jpg">
-  </a-assets>
-    
-    <a-entity enviropack-hdri="backstop: https://polyhaven.com/a/scythian_tombs_2"></a-entity>
-
-<a-entity enviropack="preset: tankfarm"></a-entity>
-
-<a-plane src="#ground" height="600" width="600" rotation="-90 0 0"></a-plane>
-
-
-; blending: subtractive
--->
-<a-entity 
-    enviropack="preset: tankfarm"
-    enviropack-hdri="backstop: https://polyhaven.com/a/scythian_tombs_2"
-></a-entity>
-<a-sky src="./assets/panorama.jpg"></a-sky>
-
-
-<a-box 
-    position="-1 1 -1" 
-    rotation="0 45 0" 
-    scale="3.5 3.5 3.5" 
-    shadow enviropack-material="material: metal">
-</a-box>
-
-
-
-<a-plane src="#png1" height="2" width="2" rotation="-90 45 0" position="-1.2 2.79 -1.2" material="shader: flat; blending: subtractive" navigate-on-click="url: mosca0.html"></a-plane>
-
-<a-plane src="#png1" height="2" width="2" rotation="0 45 0" position=".5 1.3 .5" material="shader: flat; blending: subtractive" navigate-on-click="url: mosca1.html"></a-plane>
- 
-      <a-entity 
-      navigate-on-click="url: https://www.youtube.com/watch?v=bLiRVMyPfTs"
-      gltf-model="#png1"  
-      scale="20 20 20" 
-      position="-1 1 -1" 
-      rotation="0 0 0" 
-      material="shader: flat">
-  </a-entity>
-  
-  
-  <script>
-    AFRAME.registerComponent('navigate-on-click', {
-        schema: {
-            url: { default: ''}
-        },
-  
-        init: function () {
-            var data = this.data;
-            var el = this.el;
-  
-            el.addEventListener('click', function () {
-                window.open(data.url,"_blank");
-               
-                
-            });
-        }
-    });        
-  </script>
-  </a-scene>
-  </body>
-
+	<table class="table">
+		<thead>
+			<tr>	</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<a href="./PABLO BARESCH/index.html">
+						2023      |      PABLO BARESCH      |      🇨🇴      |      4°85'00N" 39°45'00"O      |      EL ANIMAL</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./MIGUEL CINTA ROBLES/index.html">
+						2023      |      MIGUEL CINTA ROBLES      |      🇲🇽      |      46°19′N 6°54′E      |      CÓMO RECORDAMOS UN BOSQUE</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./RODRIGO MORAES/index.html">
+						2022      |      RODRIGO MORAES      |      🇺🇾      |      5°32′00″N 73°22′00″O      |      EL BRUJO</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./VALENTINA MALDONADO/index.html">
+						2022      |      VALENTINA MALDONADO      |      🇨🇱      |      33°07′21″S 71°34′35″O      |      SÊMÎAZÂZ</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./FELIPE PATARROYO/index.html">
+						2022      |      FELIPE PATARROYO      |      🇨🇴      |      5°32′00″N 73°22′00″O      |      TE INVITO A QUE ME OLVIDES, NO FALTES</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./ARBOL/index.html">
+						2021      |      ÁRBOL      |      🇨🇴      |      49°11'11"N 0°21'45"W      |      CORAZÓN</a>
+			</tr>
+			<tr>
+				<td>
+					<a href="./CAFE INTERNET/index.html">
+						2021      |      CAFÉ INTERNET      |      🇨🇴      |      5°36'17"N 73°18'26"W      |      RECURSO NO ENCONTRADO</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./TRABAJAJAJAR/index.html">
+						2021      |      TRABAJAJAJAR      |      🇨🇴      |      5°04′10″N 74°35′53″O      |      SE VIENEN COSAS GRANDES</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./JOHNSON & JEISON/index.html">
+						2021      |      JOHNSON & JEISON      |      🇨🇴      |      5°35′40″ N 73°18′29″ O      |      BUENOS DÍAS, TARDES YA</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./VIRREINA/index.html">
+						2021      |      VIRREINA      |      🇨🇴      |      5°35′40″ N 73°18′29″ O      |      BIEN, BIEN, ¿Y TÚ?</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
 </html>
