@@ -74,8 +74,7 @@ html{
     overflow: hidden;
     color: black;
     font-size: 1vw; 
-    font-family: 'Dia', helvetica, arial, sans-serif;
-    background-color: none;
+    font-family: 'Manrope', sans-serif;    background-color: none;
   }
   
   
@@ -160,7 +159,7 @@ html{
   /* mouse over link */
   a:hover {
     color: black;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', sans-serif;
     text-shadow: 0 0 8px #000;
     
   }
@@ -185,16 +184,14 @@ html{
     z-index: 1000;
     color: black;
     font-size: 1vw; 
-    font-family: 'Dia', helvetica, arial, sans-serif;
-    background-color: none;
+    font-family: 'Manrope', sans-serif;    background-color: none;
   }
   
   
   .idioma a{
     color: transparent;
     font-size: 3vw; 
-    font-family: 'Dia', helvetica, arial, sans-serif;
-    background-color: none;
+    font-family: 'Manrope', sans-serif;    background-color: none;
     writing-mode: vertical-lr;
     text-shadow: 1px 1px 7px black; 
     }
@@ -202,8 +199,7 @@ html{
     .idioma a:hover{
         color: black;
         font-size: 3vw; 
-        font-family: 'Dia', helvetica, arial, sans-serif;
-        background-color: none;
+        font-family: 'Manrope', sans-serif;        background-color: none;
         writing-mode: vertical-lr;
         }
       
@@ -213,8 +209,7 @@ position: fixed;
 top: 30%;
 color: transparent;
 font-size: 3vw; 
-font-family: 'Dia', helvetica, arial, sans-serif;
-background-color: none;
+font-family: 'Manrope', sans-serif;background-color: none;
 writing-mode: vertical-rl;
 text-shadow: 1px 1px 7px black; 
 transform: rotate(180deg);
@@ -294,7 +289,7 @@ text-shadow: 0 0 10px #000;
   background-color: none;
   line-height: 1.5;
   text-align: left;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   max-width: 27%;
   padding: 3%;
   border: none;
@@ -337,6 +332,133 @@ text-shadow: 0 0 10px #000;
 
   
   
-  @media only screen and (min-width: 1600px) {
-  }
+    @media screen and (max-width: 600px) {
+
+
+
+      
+      #info{
+      line-height: 1.1;    font-size: 1.75vh;
+      max-width: 70%;
+      width: 70%;
+      left: 5%;
+      text-align: left;
+      color: black;
+      }
+  
+  
+      .clock {
+        font-size: 2vh; 
+        left: 80%;
+        top: 95%;
+        position: fixed;
+        }
+  
+  
+  
+  
+    .seccion {
+      display: none;
+      }
+  
     
+    .dropbtn {
+    top: -1%;
+    position: fixed;
+    }
+  
+    .dropdown-content {
+      font-size: 0px;
+    }
+  
+
+    .hovertext {
+      position: relative;
+      text-decoration: underline;
+      text-align: left;
+      }
+  
+      .idioma a{
+      font-size: 5vh; 
+      }
+  
+      .idioma {
+        top: 1%;
+        left: 80%;
+        width: 100%;
+        height: 100%;
+        font-size: 5vh; 
+      }
+      
+
+      .apply a{
+        position: fixed;
+        top: 70%;
+        left: -10%;
+        color: transparent;
+        font-size: 5vh; 
+        font-family: 'Manrope', sans-serif;background-color: none;
+        writing-mode: vertical-rl;
+        text-shadow: 1px 1px 7px black; 
+        transform: rotate(180deg);
+        }
+
+
+
+        #pregunta1 {
+          position: absolute;
+          left: 15%;
+          top: 27%;
+          right: auto;
+        }
+        
+        #pregunta2 {
+          position: absolute;
+          left: 25%;
+          top: 40%;
+          right: auto;
+        }
+        
+        #pregunta3 {
+          position: absolute;
+          left: 8%;
+          top: 80%;
+          right: auto;
+        }
+        
+        #pregunta4 {
+          position: absolute;
+          left: 6%;
+          top: 70%;
+          right: auto;
+        }
+        
+        #pregunta5 {
+          position: absolute;
+          left: 2%;
+          top: 60%;
+          right: auto;
+        }
+        
+        #pregunta6 {
+          position: absolute;
+          left: 50%;
+          top: 20%;
+          right: auto;
+        }
+        
+        #pregunta7 {
+          position: absolute;
+          left: 6%;
+          top: 10%;
+          right: auto;
+        }
+        
+        #pregunta8 {
+          position: absolute;
+          left: 20%;
+          top: 50%;
+          right: auto;
+        }
+
+  }

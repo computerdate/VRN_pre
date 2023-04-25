@@ -81,7 +81,7 @@ a {
     overflow: hidden;
     color: black;
     font-size: 1vw; 
-    font-family: 'Dia', helvetica, arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: none;
   }
   
@@ -179,7 +179,7 @@ a {
   /* mouse over link */
   a:hover {
     color: black;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', sans-serif;
     text-shadow: 0 0 8px #000;
     
   }
@@ -204,7 +204,7 @@ a {
     z-index: 1000;
     color: black;
     font-size: 1vw; 
-    font-family: 'Dia', helvetica, arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: none;
   }
   
@@ -212,7 +212,7 @@ a {
   .idioma a{
     color: transparent;
     font-size: 3vw; 
-    font-family: 'Dia', helvetica, arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: none;
     writing-mode: vertical-lr;
     text-shadow: 1px 1px 7px black; 
@@ -221,7 +221,7 @@ a {
     .idioma a:hover{
         color: black;
         font-size: 3vw; 
-        font-family: 'Dia', helvetica, arial, sans-serif;
+        font-family: 'Manrope', sans-serif;
         background-color: none;
         writing-mode: vertical-lr;
         }
@@ -262,7 +262,7 @@ a {
       padding: 3px;
       color: white;
       /*background-color: #3efc42;*/
-      font-family: 'Dia', helvetica, arial, sans-serif;
+      font-family: 'Manrope', sans-serif;
       text-decoration: underline;
       text-shadow: 5 5 8px #3efc42;
       
@@ -283,3 +283,57 @@ a {
   display: block;
   z-index: 1000;
   }
+
+
+  
+  @media screen and (max-width: 600px) {
+
+    
+    #info{
+    line-height: 1.1;    font-size: 1.75vh;
+    max-width: 70%;
+    width: 70%;
+    left: 5%;
+    text-align: left;
+    color: black;
+    }
+
+
+    .clock {
+      font-size: 2vh; 
+      left: 80%;
+      top: 95%;
+      position: fixed;
+      }
+
+
+
+  .seccion {
+    display: none;
+    }
+
+  
+  .dropbtn {
+  top: -1%;
+  position: fixed;
+  }
+
+  .dropdown-content {
+    font-size: 0px;
+  }
+
+
+   
+#F1  { 
+  width: 10%;
+  max-width: 10%;
+  top: 30%;
+  left: -40%;
+  display: block;
+  z-index: 1000;
+  }
+
+
+
+
+}
