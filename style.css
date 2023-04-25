@@ -195,7 +195,7 @@ border-radius: 200px 200px 200px 200px;
   text-decoration: underline;
   color: #00ff00;
   background-color: none;
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Playfair Display', serif;*/
   text-shadow: 0 0 20px #00ff00;
   }
        
@@ -227,7 +227,7 @@ border-radius: 200px 200px 200px 200px;
 }
 .marquee:before {
   left: 0;
-  background: linear-gradient(to right, ccc 10%, transparent 80%);
+  background: linear-gradient(to right, #ccc 10%, transparent 80%);
 }
 .marquee:after {
   right: 0;
@@ -237,7 +237,7 @@ border-radius: 200px 200px 200px 200px;
   width: 300%;
   display: flex;
   line-height: 30px;
-  animation: marquee 15s linear infinite forwards;
+  animation: marquee 30s linear infinite forwards;
   
 }
 .marquee__content:hover {
