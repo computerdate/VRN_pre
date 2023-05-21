@@ -307,9 +307,152 @@ th {
 	background-color: #f2f2f2;
 }
 
+
+
+
+/*IDs Hovers*/
+
+.Pablo:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./PABLO BARESCH/assets/ID_Baresch.png");
+}
+
+.Miguel:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./MIGUEL CINTA ROBLES/assets/ID_Miguel.png");
+}
+
+
+.Rodri:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./RODRIGO MORAES/assets/ID RODRIGO MORAES.png");
+}
+
+
+.Valentina:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./VALENTINA MALDONADO/assets/ID VALENTINA MALDONADO.png");
+}
+
+
+.Felipe:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./FELIPE PATARROYO/assets/ID FELIPE PATARROYO.png");
+}
+
+
+.Arbol:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./ARBOL/assets/ID ARBOL.png");
+}
+
+
+.CafeInternet:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./CAFE INTERNET/assets/ID CAFEINTERNET.png");
+}
+
+
+.Trabajajajar:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./TRABAJAJAJAR/assets/ID TRabajajar.png");
+}
+
+.JYJ:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./JOHNSON & JEISON/assets/ID_J&J.png");
+}
+
+.VRN:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./VIRREINA/assets/ID_VRN.png");
+}
+
+
+
+
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
-	table {
-		font-size: .8vw;
+  html{
+    overflow: auto;
+ }
+
+
+ .clock {
+  font-size: 2vh; 
+  left: 40%;
+  top: 1%;
+  position: fixed;
+  }
+
+
+  .seccion {
+    font-size: 1.7vh; 
+    position: fixed;
+    left: 75%;
     }
+
+  
+  .dropbtn {
+  top: -1%;
+  position: fixed;
+  }
+
+  .dropdown-content {
+    font-size: 0px;
+  }
+
+
+	table {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    line-height: normal;
+		font-size: 3vh;
+    text-align: left;
+    white-space: inherit;
+    }
+
+
+  
+  .table a{
+      text-decoration: none;
+  }
+  
+  .table a:hover{
+      text-decoration: underline;
+  }
+  
+  
+  th, td {
+    padding: 10px;
+    text-align: center justify;
+    border: none;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
 }
+
