@@ -1,6 +1,6 @@
 html{
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 body {
@@ -64,11 +64,11 @@ header{
   left: 90%;
   width: 50%;
   height: 100%;
-  z-index: 1000;
+  z-index: 10001;
   overflow: hidden;
   color: black;
   font-size: 1vw; 
-  font-family: 'Dia', helvetica, arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
   background-color: none;
 }
 
@@ -83,7 +83,7 @@ header{
   right: 0%;
   height: fit-content;
   max-height: 100%;
-  z-index: 100;
+  z-index: 1000;
   background-color: white;
 }       
 .banner:hover {
@@ -97,7 +97,7 @@ header{
 .ID {
   display: none;
   width: 70%;
-  z-index: 100000;
+  z-index: 10000000;
 }
 .tituloprojecto:hover+.ID  {
   display: inline-block;
@@ -211,7 +211,7 @@ a-scene {
       /* mouse over link */
       a:hover {
         color: black;
-        font-family: 'Playfair Display', serif;
+  font-family: 'Manrope', sans-serif;
         text-shadow: 0 0 8px #000;
         
       }
@@ -219,7 +219,7 @@ a-scene {
       /* selected link */
       a:active {
         color: black;
-        font-family: 'Playfair Display', serif;
+  font-family: 'Manrope', sans-serif;
       }
     
     
