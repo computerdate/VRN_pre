@@ -39,7 +39,7 @@
         <img id="png3" src="./assets/C3.png">
         <img id="png4" src="./assets/C4.png">
         <img id="png5" src="./assets/C5.png">
-        <img id="png6" src="./assets/controles.png">
+        <audio id="moscas" src="./assets/zumbido.mpeg" preload="auto" autoplay loop="true"></audio>
 
     </a-assets>     
 
@@ -53,7 +53,7 @@
   <a-scene physics="gravity: 0  ; " >
   
     <a-entity id="rig" movement-controls kinematic-body position="2.192 1.6 2">
-        <a-entity id="camera" camera position="-2 3.5 20" camera rotation ="0 0 0"  look-controls  cursor="rayOrigin: mouse"></a-entity>
+        <a-entity id="camera" camera position="-2 3.5 12" camera rotation ="0 0 0"  look-controls  cursor="rayOrigin: mouse"></a-entity>
       </a-entity>
  
    
@@ -100,7 +100,12 @@
 <a-sky src="./assets/lilienstein.webp"></a-sky>
 
 
+<!--AudioZumbido-->
+<a-entity sound="src:#moscas; autoplay: true" position="1 2 1" loop="true"></a-entity>
+
+
 <!--CuboInterno-->
+<!--
 <a-box 
     position="1 2 1" 
     rotation="0 0 0" 
@@ -108,6 +113,7 @@
     material="shader: flat; color: white"
     >
 </a-box>
+-->
 
 <!--IluminacionCubo-->
 <!--
@@ -128,7 +134,7 @@ src="#png1"
 height="4" 
 width="4" 
 rotation="-90 0 0" 
-position="1 4.1 1" 
+position="1 4 1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -139,7 +145,7 @@ src="#png1"
 height="4" 
 width="4" 
 rotation="90 0 0" 
-position="1 4.1 1" 
+position="1 4 1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -151,7 +157,7 @@ src="#png2"
 height="4" 
 width="4" 
 rotation="0 90 0" 
-position="3.1 2 1" 
+position="3 2 1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -162,7 +168,7 @@ src="#png2"
 height="4" 
 width="4" 
 rotation="0 -90 0" 
-position="3.1 2 1" 
+position="3 2 1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -175,7 +181,7 @@ src="#png3"
 height="4" 
 width="4" 
 rotation="0 -90 0" 
-position="-1.1 2 1" 
+position="-1 2 1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -186,7 +192,7 @@ src="#png3"
 height="4" 
 width="4" 
 rotation="0 90 90" 
-position="-1.1 2 1" 
+position="-1 2 1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -198,7 +204,7 @@ src="#png4"
 height="4" 
 width="4" 
 rotation="0 -180 0" 
-position="1 2 3.1" 
+position="1 2 3" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -209,7 +215,7 @@ src="#png4"
 height="4" 
 width="4" 
 rotation="180 180 90" 
-position="1 2 3.1" 
+position="1 2 3" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -221,7 +227,7 @@ src="#png5"
 height="4" 
 width="4" 
 rotation="0 -180 0" 
-position="1 2 -1.1" 
+position="1 2 -1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -232,7 +238,7 @@ src="#png5"
 height="4" 
 width="4" 
 rotation="180 180 90" 
-position="1 2 -1.1" 
+position="1 2 -1" 
 material="shader: flat;blending: subtractive 
 shadow enviropack-material="material: metal" 
 navigate-on-click="url: mosca1.html; target: _self">
@@ -240,18 +246,6 @@ navigate-on-click="url: mosca1.html; target: _self">
 
 
 
-<!--Controls-->
-<a-plane w
-src="#png6" 
-height="" 
-width="2" 
-rotation="180 180 180" 
-position="1 5 15" 
-scale="6 6 6"
-material="shader: flat;blending: subtractive 
-shadow enviropack-material="material: metal" 
-navigate-on-click="url: mosca1.html; target: _self">
-</a-plane>
 
 
 <!--
