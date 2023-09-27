@@ -77,7 +77,7 @@ header{
 }     
 
 .banner:hover {
-  filter: drop-shadow(0 0 .5rem rgb(219, 255, 134));
+  filter: drop-shadow(0 0 .5rem rgb(255, 0, 0));
 }
 
 .hover {
@@ -93,6 +93,16 @@ header{
 }
 
 .tituloprojecto:hover+.ID  {
+  display: inline-block;
+  position:absolute;
+  top: 35%;
+  left: -710%;
+  width: fit-content;
+  max-height: 100%;
+  z-index: 100000;
+}
+
+.JR:hover+.ID  {
   display: inline-block;
   position:absolute;
   top: 35%;
@@ -229,13 +239,14 @@ a:active {
   position: absolute;
   padding: 2%;
   align-items: center;
-  top: 340%;
+  top: 350%;
   left: 5%;
   width: 70%;
   height: 100%;
   z-index: 1000;
   overflow: hidden;
   color: white;
+  text-align: right;
   font-size: 2vw; 
   font-family: "miniTRAIL";
   background-color: none;
@@ -247,36 +258,37 @@ a:active {
   src: url("./assets/miniTRAILstellis-Regular.woff") format('woff');
 }
 
+
 .marquee {
   margin: 20px;
-  max-width: 40%;
-  height: 25px;
+  max-width: 90%;
+  height: 5vw;
   width: 100%;
   z-index: 1000;
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.5vw;
+  font-family: "miniTRAIL";
+  font-size: 3vw;
   text-align: center;
   background-color: none;
   color: azure;
   overflow: hidden;
-  position: fixed;
-  top: 80%;
-  left: 40%;
-  
+  position: sticky;
+  top: 300%;
+  left: 20%;
+  z-index: 100;
 }
+
 
 .marquee div {
   display: flex;
-  width: 200%;
-  height: 25px;
+  width: 210%;
+  height: 5vw;
   position: absolute;
   overflow: hidden;
-  /*animation: marquee 5s linear infinite;*/
 }
 
 .marquee span {
   float: left;
-  width: 50%;
+  width: 90%;
 }
 
 @keyframes marquee {
